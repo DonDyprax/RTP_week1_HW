@@ -5,8 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Week 1 - Form Validation</title>
+    <link rel="stylesheet" href="index.css">
+    <script type="text/javascript" src="index.js"></script>
 </head>
 <body>
-    
+    <div class="form-container">
+        <form action="/" method="post" novalidate onsubmit="myFunction()">
+            <ul>
+                <li>
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name">
+                </li>
+                <li>
+                    <label for="lastname">Lastname: </label>
+                    <input type="text" name="lastname" id="lastname">
+                </li>
+                <li>
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email">
+                </li>
+                <li>
+                    <label for="password">Password: </label>
+                    <input type="password" name="password" id="password">
+                </li>
+                <li>
+                    <label for="confirmPassword">Confirm password: </label>
+                    <input type="password" name="confirmPassword" id="confirmPassword">
+                </li>
+                <li>
+                    <label for="phone">Phone: </label>
+                    <input type="tel" name="phone" id="phone">
+                </li>
+                <li>
+                    <label for="age">Age: </label>
+                    <input type="number" name="age" id="age">
+                </li>
+                <li>
+                    <label for="website">Website: </label>
+                    <input type="url" name="website" id="website">
+                </li>
+                <li>
+                    <label for="experience">Level of experience: </label>
+                    <input type="range" name="experience" id="experience">
+                </li>
+                <li>
+                    <label><input type="checkbox" id="terms" value="terms"> I agree to the terms and conditions.</label>
+                </li>
+                <li>
+                    <input type="submit" value="Submit">
+                </li>
+            </ul>
+        </form>
+    </div>
 </body>
 </html>
