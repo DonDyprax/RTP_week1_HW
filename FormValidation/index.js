@@ -118,7 +118,7 @@ function validateLastname() {
         return false;
     }
 
-    if(!re.test(document.signupForm.name.value)) {
+    if(!re.test(document.signupForm.lastname.value)) {
         setError(lastname, '*Lastname should only contain letters.')
         return false;
     }
