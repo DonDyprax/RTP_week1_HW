@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 
 * {
     -webkit-box-sizing: border-box;
@@ -30,6 +32,7 @@ form {
 
 label {
     display: block;
+    font-weight: bold;
 }
 
 .field-wrapper {
@@ -61,6 +64,10 @@ label {
 
 .field-wrapper.error input {
 	border-color: red;
+}
+
+.field-wrapper.error small {
+	visibility: visible;
 }
 
 .field-wrapper small {
@@ -107,8 +114,9 @@ input[type="submit"] {
     padding: 10px;
     border-width: 0px;
     background-color: springgreen;
-    font-family: inherit;
-    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
     font-weight: bold;
     box-shadow: 0 2px 5px rgb(0 0 0 / 30%);
+    color:white;
 }
