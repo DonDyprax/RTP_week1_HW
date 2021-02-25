@@ -9,50 +9,78 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
     <script type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
 </head>
 <body>
     <div class="form-container">
-        <form action="/" method="post" novalidate onsubmit="myFunction()">
-                    <div>
+        <div class="header">
+            <h2>Signup Form</h2>
+        </div>
+        <form name="signupForm" action="/" method="post" novalidate onsubmit="validateForm()">
+                    <div class="field-wrapper">
                         <label for="name">NAME</label>
-                        <input type="text" name="name" id="name">
+                        <input type="text" name="name" id="name" placeholder="John">
+                        <i class="fas fa-check-circle"></i>
+			            <i class="fas fa-exclamation-circle"></i>
+                        <small>Error</small>
                     </div>
-                    <div class="float-right">
+                    <div class="field-wrapper">
                         <label for="lastname">LASTNAME</label>
-                        <input type="text" name="lastname" id="lastname">
+                        <input type="text" name="lastname" id="lastname" placeholder="Doe">
+                        <i class="fas fa-check-circle"></i>
+			            <i class="fas fa-exclamation-circle"></i>
+                        <small>Error</small>
                     </div>
 
-                    <div class="full-width">
+                    <div class="field-wrapper full-width">
                         <label for="email">EMAIL</label>
-                        <input type="email" name="email" id="email">
+                        <input type="email" name="email" id="email" placeholder="john.doe@gmail.com">
+                        <i class="fas fa-check-circle"></i>
+			            <i class="fas fa-exclamation-circle"></i>
+                        <small>Error</small>
                     </div>
                     
-                    <div>
+                    <div class="field-wrapper">
                         <label for="password">PASSWORD</label>
-                        <input type="password" name="password" id="password">
+                        <input type="password" name="password" id="password" placeholder="password">
+                        <i class="fas fa-check-circle"></i>
+			            <i class="fas fa-exclamation-circle"></i>
+                        <small>Error</small>
                     </div>
-                    <div>
+                    <div class="field-wrapper">
                         <label for="confirmPass">RE-ENTER PASSWORD</label>
-                        <input type="password" name="confirmPass" id="confirmPass">
+                        <input type="password" name="confirmPass" id="confirmPass" placeholder="password">
+                        <i class="fas fa-check-circle"></i>
+			            <i class="fas fa-exclamation-circle"></i>
+                        <small>Error</small>
                     </div>
 
-                    <div class="full-width">
+                    <div class="field-wrapper full-width">
                         <label for="phoneNumber">PHONE#</label>
-                        <input type="tel" name="phoneNumber" id="phoneNumber">
+                        <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="7777-7777">
+                        <i class="fas fa-check-circle"></i>
+			            <i class="fas fa-exclamation-circle"></i>
+                        <small>Error</small>
                     </div>
                     
-                    <div class="full-width">
+                    <div class="field-wrapper full-width">
                         <label for="website">WEBSITE</label>
-                        <input type="url" name="website" id="website">
+                        <input type="url" name="website" id="website" placeholder="www.mywebsite.com">
+                        <i class="fas fa-check-circle"></i>
+			            <i class="fas fa-exclamation-circle"></i>
+                        <small>Error</small>
                     </div>
                     
-                    <div>
+                    <div class="field-wrapper">
                         <label for="age">AGE</label>
-                        <input type="number" name="age" id="age">
+                        <input type="number" name="age" id="age" placeholder="23">
+                        <i id="ageSuccess" class="fas fa-check-circle"></i>
+			            <i id="ageError"class="fas fa-exclamation-circle"></i>
+                        <small>Error</small>
                     </div>
                     <div>
                         <label for="experience">LEVEL OF EXPERIENCE</label>
-                        <input type="range" name="experience" id="experience">
+                        <input type="range" min="0" max="4" step="1" name="experience" id="experience">
                     </div>
 
                     <input type="submit" value="Submit">
