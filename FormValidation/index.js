@@ -200,6 +200,11 @@ function validatePhoneNumber() {
 function validateAge() {
     const re = /^[0-9]+$/;
 
+    if(document.signupForm.age.valueAsNumber == 0) {
+        setError(age, '*Age cannot be 0.');
+        return false;
+    }
+
     if(!re.test(document.signupForm.age.value)) {
         setError(age, '*Age has to be a number.');
         return false;
