@@ -11,13 +11,13 @@ let combo = "";
 
 
 window.addEventListener('keydown', function (e) {
-    if(e.key != '/') {
+    if(e.key != '\\') {
         combo += e.key.toLowerCase();
     }
     
     comboCounter.innerText = combo.toUpperCase();
 
-    if(e.key == '/') {
+    if(e.key == '\\') {
         combo = "";
         comboCounter.innerText = combo;
         if(container.childElementCount > 0) {
