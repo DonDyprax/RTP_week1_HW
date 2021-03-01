@@ -11,10 +11,11 @@
     font-size: xxx-large;
     font-family: 'Oswald', sans-serif;
     letter-spacing: 4px;
+    color: white;
 }
 
 body {
-    background-color: darkorchid;
+    background-color: #240235;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,7 +37,7 @@ body {
     justify-content: center;
     border-width: 4px;
     border-style: solid;
-    border-color: black;
+    border-color: rgb(89 5 151)
 }
 
 .legend {
